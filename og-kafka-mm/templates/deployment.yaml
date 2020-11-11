@@ -74,6 +74,10 @@ spec:
               value: "{{ .Values.kafka.numStreams }}"
             - name: KAFKA_MM_WHITELIST
               value: "{{ .Values.kafka.topicWhitelist }}"
+            {{- if .Values.kafka.mm_opts }}
+            - name: KAFKA_MM_OPTS
+              value: "{{ .Values.kafka.mm_opts }}"
+            {{- end }}
             {{- if .Values.jmx.port }}
             - name: JMX_PORT
               value: "{{ .Values.jmx.port }}"

@@ -1,0 +1,4 @@
+https://github.com/slavirok/mirrormaker-rename-topic-handler
+
+
+--message.handler com.slavirok.RenameTopicHandler --message.handler.args "source_topic_A,target_topicA;source_topic_A,target_topic_A"

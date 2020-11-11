@@ -8,4 +8,4 @@ set -u
 				--whitelist "${KAFKA_MM_WHITELIST:-.*}" \
 				--abort.on.send.failure true new.consumer \
 				--producer.config "${KAFKA_MM_CFG_ROOT}/producer.properties" \
-				--consumer.config "${KAFKA_MM_CFG_ROOT}/consumer.properties"
+				--consumer.config "${KAFKA_MM_CFG_ROOT}/consumer.properties" ${KAFKA_MM_OPTS}
