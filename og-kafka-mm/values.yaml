@@ -68,6 +68,7 @@ prometheus:
 kafka:
   topicWhitelist: ".*"
   numStreams: "1"
+  mm_opts: ""
   producerConfig:
     bootstrap.servers: "dev1-kafka-0:9092"
     max.in.flight.requests.per.connection: '1'
